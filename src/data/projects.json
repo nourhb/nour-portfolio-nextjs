@@ -17,67 +17,6 @@
     ]
   },
   {
-    "id": 52,
-    "name": "Cosm\u00e9tique E-Commerce",
-    "category": "E-Commerce",
-    "description": "A modern WordPress + WooCommerce cosmetics e-commerce store. Product catalogs, shopping cart, payment processing, and customer management for beauty products.",
-    "github": "https://github.com/nourhb/site-e-commerce-cosmetique-wp",
-    "tech": [
-      "WooCommerce",
-      "WordPress",
-      "PHP"
-    ],
-    "image": "/images/project-52.webp",
-    "gallery": []
-  },
-  {
-    "id": 51,
-    "name": "DevSecOps PaaS",
-    "category": "Cloud & DevOps",
-    "description": "Microservices PaaS platform with DevSecOps pipeline. Next.js control-plane UI for sign-in, project management, builds, security scans, GitOps, and cluster deployment.",
-    "github": "https://github.com/nourhb/devsecops_paas_miscroservices",
-    "tech": [
-      "AWS",
-      "Terraform",
-      "Kubernetes",
-      "Docker",
-      "CI/CD"
-    ],
-    "image": "/images/project-51.webp",
-    "gallery": []
-  },
-  {
-    "id": 50,
-    "name": "AWS Next Express",
-    "category": "Cloud & DevOps",
-    "description": "Full-stack Next.js + Express app deployed on AWS with DynamoDB, S3, Docker, and Kubernetes. Modern cloud-native architecture showcasing end-to-end deployment.",
-    "github": "https://github.com/nourhb/aws-next-express",
-    "tech": [
-      "AWS",
-      "Terraform",
-      "Kubernetes",
-      "Docker",
-      "CI/CD"
-    ],
-    "image": "/images/project-50.webp",
-    "gallery": []
-  },
-  {
-    "id": 49,
-    "name": "CloudLinkedIn Agent",
-    "category": "AI",
-    "description": "An autonomous AI agent that plans, writes, validates, and publishes one Cloud/DevOps LinkedIn post per day \u2014 fully on free-tier infrastructure. Avoids repetition, keeps full history, posts daily without further input.",
-    "github": "https://github.com/nourhb/cloud-linkedin-agent",
-    "tech": [
-      "Python",
-      "TypeScript",
-      "LLMs",
-      "n8n"
-    ],
-    "image": "/images/project-49.webp",
-    "gallery": []
-  },
-  {
     "id": 48,
     "name": "Maqss",
     "category": "WordPress",
@@ -100,98 +39,6 @@
       "/images/galleries/maqss-g7.webp",
       "/images/galleries/maqss-g8.webp"
     ]
-  },
-  {
-    "id": 47,
-    "name": "Bloom",
-    "category": "WordPress",
-    "description": "A joyful, sunny block theme for kindergartens and preschools. Playful rounded typography, sticker-style badges, and ready-made patterns for programs, teachers, galleries, events, and enrollment.",
-    "github": "https://github.com/nourhb/bloom-kindergarten-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-47.webp",
-    "gallery": []
-  },
-  {
-    "id": 46,
-    "name": "Nexus",
-    "category": "WordPress",
-    "description": "A high-voltage Full Site Editing block theme for gaming platforms, esports teams, and game review sites. Dark neon HUD-inspired design with patterns for featured games, leaderboards, tournaments, reviews, and live streams.",
-    "github": "https://github.com/nourhb/nexus-gaming-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-46.webp",
-    "gallery": []
-  },
-  {
-    "id": 45,
-    "name": "Zero-Trust Supply Chain",
-    "category": "Cloud & DevOps",
-    "description": "Zero-trust software supply chain security framework. Cosign image signing, SLSA provenance attestation, SBOM generation, Kyverno admission policies \u2014 end-to-end verifiable builds from source to deployment.",
-    "github": "https://github.com/nourhb/zero-trust-supply-chain",
-    "tech": [
-      "AWS",
-      "Terraform",
-      "Kubernetes",
-      "Docker",
-      "CI/CD"
-    ],
-    "image": "/images/project-45.webp",
-    "gallery": []
-  },
-  {
-    "id": 44,
-    "name": "EKS GitOps Blueprint",
-    "category": "Cloud & DevOps",
-    "description": "Advanced EKS GitOps blueprint with 42 files. Production-ready Terraform infrastructure, Argo CD continuous delivery, EKS 1.29 cluster with autoscaling, monitoring stack, and security best practices \u2014 a complete Kubernetes platform foundation.",
-    "github": "https://github.com/nourhb/eks-gitops-blueprint",
-    "tech": [
-      "AWS",
-      "Terraform",
-      "Kubernetes",
-      "Docker",
-      "CI/CD"
-    ],
-    "image": "/images/project-44.webp",
-    "gallery": []
-  },
-  {
-    "id": 43,
-    "name": "Lumina",
-    "category": "WordPress",
-    "description": "Sleek, clinical WordPress block theme for laser clinics and med spas. Clean whites, precise layouts, treatment catalogs, pricing tables, and consultation booking patterns.",
-    "github": "https://github.com/nourhb/lumina-laser-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-43.webp",
-    "gallery": []
-  },
-  {
-    "id": 42,
-    "name": "Serene",
-    "category": "WordPress",
-    "description": "Tranquil WordPress block theme for spas and wellness centers. Calming neutrals, soft gradients, treatment menus, booking patterns, and testimonial sections designed for relaxation.",
-    "github": "https://github.com/nourhb/serene-spa-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-42.webp",
-    "gallery": []
   },
   {
     "id": 41,
@@ -218,21 +65,6 @@
     ]
   },
   {
-    "id": 40,
-    "name": "Ever After",
-    "category": "WordPress",
-    "description": "Romantic WordPress block theme for weddings and event planners. Delicate florals, elegant script typography, RSVP patterns, gallery layouts, and countdown sections for unforgettable celebrations.",
-    "github": "https://github.com/nourhb/everafter-wedding-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-40.webp",
-    "gallery": []
-  },
-  {
     "id": 39,
     "name": "Haven",
     "category": "WordPress",
@@ -255,51 +87,6 @@
       "/images/galleries/haven-g7.webp",
       "/images/galleries/haven-g8.webp"
     ]
-  },
-  {
-    "id": 38,
-    "name": "Saffron",
-    "category": "WordPress",
-    "description": "Warm, appetizing WordPress block theme for restaurants. Rich saffron and spice tones, elegant menu layouts, reservation patterns, chef profiles, and gallery sections \u2014 a complete dining experience online.",
-    "github": "https://github.com/nourhb/saffron-restaurant-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-38.webp",
-    "gallery": []
-  },
-  {
-    "id": 37,
-    "name": "Forge",
-    "category": "WordPress",
-    "description": "High-energy WordPress block theme for gyms and fitness studios. Near-black canvas, molten orange accents, condensed display typography, class schedules, trainer profiles, membership tiers and transformation stories.",
-    "github": "https://github.com/nourhb/forge-fitness-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-37.webp",
-    "gallery": []
-  },
-  {
-    "id": 36,
-    "name": "Yasmina",
-    "category": "WordPress",
-    "description": "Elegant WordPress block theme for beauty salons, spas, and cosmetics brands. Soft blush tones, warm cream backgrounds, gold accents, and refined serif typography. 8 templates, 9 salon patterns with real photography, Noir style variation.",
-    "github": "https://github.com/nourhb/yasmina-wp-theme",
-    "tech": [
-      "WordPress",
-      "PHP",
-      "Gutenberg",
-      "FSE"
-    ],
-    "image": "/images/project-36.webp",
-    "gallery": []
   },
   {
     "id": 35,
