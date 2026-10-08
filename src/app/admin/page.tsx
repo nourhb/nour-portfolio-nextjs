@@ -9,89 +9,127 @@ export default function AdminPage() {
     github: '',
     tech: '',
   });
-  const [json, setJson] = useState('');
+  const [cover, setCover] = useState<File | null>(null);
+  const [galleries, setGalleries] = useState<File[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState('');
 
-  const generate = () => {
-    const techArray = form.tech.split(',').map(t => t.trim()).filter(Boolean);
-    const project = {
-      id: 999, // Change this to next available ID
-      name: form.name,
-      category: form.category,
-      description: form.description,
-      github: form.github,
-      tech: techArray,
-      image: `/images/project-999.webp`,
-      gallery: [`/images/project-999.webp`],
-    };
-    setJson(JSON.stringify(project, null, 2));
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setResult('');
+
+    const formData = new FormData();
+    formData.append('name', form.name);
+    formData.append('category', form.category);
+    formData.append('description', form.description);
+    formData.append('github', form.github);
+    formData.append('tech', form.tech);
+    if (cover) formData.append('cover', cover);
+    galleries.forEach((f, i) => formData.append(`gallery_${i}`, f));
+
+    try {
+      const res = await fetch('/api/admin/add-project', {
+        method: 'POST',
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setResult(`✅ ${data.message}`);
+        setForm({ name: '', category: 'Web', description: '', github: '', tech: '' });
+        setCover(null);
+        setGalleries([]);
+      } else {
+        setResult(`❌ Error: ${data.error}`);
+      }
+    } catch (err) {
+      setResult(`❌ Error: ${String(err)}`);
+    }
+    setLoading(false);
   };
 
-  return (
-    <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto', color: 'white', background: '#1a1a2e', minHeight: '100vh' }}>
-      <h1>Add New Project</h1>
-      <p>Fill the form, copy the JSON, and add it to src/data/projects.json</p>
-      
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '2rem' }}>
-        <input
-          placeholder="Project Name"
-          value={form.name}
-          onChange={e => setForm({...form, name: e.target.value})}
-          style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #444', background: '#16213e', color: 'white' }}
-        />
-        <select
-          value={form.category}
-          onChange={e => setForm({...form, category: e.target.value})}
-          style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #444', background: '#16213e', color: 'white' }}
-        >
-          <option>Web</option>
-          <option>WordPress</option>
-          <option>AI</option>
-          <option>E-Commerce</option>
-          <option>Cloud & DevOps</option>
-          <option>Marketing</option>
-        </select>
-        <textarea
-          placeholder="Description"
-          value={form.description}
-          onChange={e => setForm({...form, description: e.target.value})}
-          rows={4}
-          style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #444', background: '#16213e', color: 'white' }}
-        />
-        <input
-          placeholder="GitHub URL"
-          value={form.github}
-          onChange={e => setForm({...form, github: e.target.value})}
-          style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #444', background: '#16213e', color: 'white' }}
-        />
-        <input
-          placeholder="Tech (comma separated: React, Node.js, AWS)"
-          value={form.tech}
-          onChange={e => setForm({...form, tech: e.target.value})}
-          style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #444', background: '#16213e', color: 'white' }}
-        />
-        <button
-          onClick={generate}
-          style={{ padding: '0.75rem', borderRadius: '4px', border: 'none', background: '#e94560', color: 'white', cursor: 'pointer', fontWeight: 'bold' }}
-        >
-          Generate JSON
-        </button>
-      </div>
+  const inputStyle = { padding: '0.75rem', borderRadius: '8px', border: '1px solid #444', background: '#16213e', color: 'white', width: '100%' };
 
-      {json && (
-        <div style={{ marginTop: '2rem' }}>
-          <h3>Copy this JSON:</h3>
-          <pre style={{ background: '#0f0f1e', padding: '1rem', borderRadius: '4px', overflow: 'auto' }}>
-            {json}
-          </pre>
-          <p style={{ marginTop: '1rem', color: '#aaa' }}>
-            1. Copy the JSON above<br/>
-            2. Go to GitHub: src/data/projects.json<br/>
-            3. Add it to the array (don't forget the comma!)<br/>
-            4. Upload your photos to public/images/<br/>
-            5. Done! Vercel will deploy automatically.
-          </p>
+  return (
+    <div style={{ padding: '2rem', maxWidth: '700px', margin: '0 auto', color: 'white', background: '#1a1a2e', minHeight: '100vh' }}>
+      <h1 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>➕ Add New Project</h1>
+      <p style={{ color: '#aaa', marginBottom: '2rem' }}>Fill the form, upload photos, and click Publish. Everything happens automatically!</p>
+      
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div>
+          <label>Project Name *</label>
+          <input required placeholder="My Awesome Project" value={form.name}
+            onChange={e => setForm({...form, name: e.target.value})} style={inputStyle} />
+        </div>
+
+        <div>
+          <label>Category</label>
+          <select value={form.category} onChange={e => setForm({...form, category: e.target.value})} style={inputStyle}>
+            <option>Web</option>
+            <option>WordPress</option>
+            <option>AI</option>
+            <option>E-Commerce</option>
+            <option>Cloud & DevOps</option>
+            <option>Marketing</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Description *</label>
+          <textarea required placeholder="Describe your project..." value={form.description}
+            onChange={e => setForm({...form, description: e.target.value})}
+            rows={4} style={inputStyle} />
+        </div>
+
+        <div>
+          <label>GitHub URL</label>
+          <input placeholder="https://github.com/..." value={form.github}
+            onChange={e => setForm({...form, github: e.target.value})} style={inputStyle} />
+        </div>
+
+        <div>
+          <label>Technologies (comma separated)</label>
+          <input placeholder="React, Node.js, AWS" value={form.tech}
+            onChange={e => setForm({...form, tech: e.target.value})} style={inputStyle} />
+        </div>
+
+        <div>
+          <label>Cover Image *</label>
+          <input type="file" accept="image/*" required
+            onChange={e => setCover(e.target.files?.[0] || null)}
+            style={{ ...inputStyle, padding: '0.5rem' }} />
+          {cover && <p style={{ color: '#4ade80', fontSize: '0.9rem' }}>✓ {cover.name}</p>}
+        </div>
+
+        <div>
+          <label>Gallery Images (optional, multiple)</label>
+          <input type="file" accept="image/*" multiple
+            onChange={e => setGalleries(Array.from(e.target.files || []))}
+            style={{ ...inputStyle, padding: '0.5rem' }} />
+          {galleries.length > 0 && <p style={{ color: '#4ade80', fontSize: '0.9rem' }}>✓ {galleries.length} images selected</p>}
+        </div>
+
+        <button type="submit" disabled={loading}
+          style={{ padding: '1rem', borderRadius: '8px', border: 'none', background: loading ? '#666' : '#e94560', color: 'white', cursor: loading ? 'wait' : 'pointer', fontWeight: 'bold', fontSize: '1.1rem', marginTop: '1rem' }}>
+          {loading ? '⏳ Publishing...' : '🚀 Publish Project'}
+        </button>
+      </form>
+
+      {result && (
+        <div style={{ marginTop: '2rem', padding: '1rem', borderRadius: '8px', background: result.startsWith('✅') ? '#14532d' : '#7f1d1d' }}>
+          {result}
         </div>
       )}
+
+      <div style={{ marginTop: '3rem', padding: '1rem', borderRadius: '8px', background: '#0f0f1e', color: '#aaa', fontSize: '0.9rem' }}>
+        <strong>How it works:</strong><br/>
+        1. Fill the form and upload your photos<br/>
+        2. Click "Publish Project"<br/>
+        3. Photos upload to GitHub automatically<br/>
+        4. Project added to the portfolio<br/>
+        5. Vercel deploys automatically (2-3 min)<br/>
+        6. Done! 🎉
+      </div>
     </div>
   );
 }
