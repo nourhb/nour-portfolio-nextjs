@@ -89,7 +89,7 @@
     "id": 48,
     "name": "Maqss",
     "category": "WordPress",
-    "description": "Maqss (\u0645\u0642\u0635\u0651 \u2014 \\",
+    "description": "Maqss (\u0645\u0642\u0635\u0651 \u2014 'scissors') \u2014 a bold, masculine WordPress block theme for barbershops. Dark, edgy design with patterns for services, pricing, barbers, galleries, booking, and testimonials.",
     "github": "https://github.com/nourhb/maqss-barbershop-theme",
     "tech": [
       "WordPress",
@@ -581,28 +581,6 @@
     ]
   },
   {
-    "id": 22,
-    "name": "Sttc",
-    "category": "Web",
-    "description": "The STTC website \u2014 a professional web project delivering a modern, responsive online presence. Clean code, fast loading times, and a user-focused design built to contemporary web development standards.",
-    "github": "",
-    "tech": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js"
-    ],
-    "image": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/nextjs-project-22.webp",
-    "gallery": [
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-22-g1.webp",
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-22-g2.webp",
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-22-g3.webp",
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-22-g4.webp",
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-22-g5.webp",
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-22-g6.webp"
-    ]
-  },
-  {
     "id": 21,
     "name": "Digitalmel0 Entreprise Website",
     "category": "Web",
@@ -677,23 +655,6 @@
     "image": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/nextjs-project-18.webp",
     "gallery": [
       "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-18-g1.webp"
-    ]
-  },
-  {
-    "id": 17,
-    "name": "Digitalmel0 Entreprise Website",
-    "category": "Web",
-    "description": "The corporate website for Digitalmel0 \u2014 a professional company site built on WordPress. Modern design, clear service presentation, and a fully responsive layout that performs on every device.",
-    "github": "",
-    "tech": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js"
-    ],
-    "image": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/nextjs-project-17.webp",
-    "gallery": [
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/project-17-g1.webp"
     ]
   },
   {
