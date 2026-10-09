@@ -1,65 +1,42 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Manrope } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CursorHalo from "@/components/CursorHalo";
-import RevealInit from "@/components/RevealInit";
 import "./globals.css";
 
-const display = Bricolage_Grotesque({
-  variable: "--font-display",
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
 });
 
-const body = Manrope({
-  variable: "--font-body",
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-display",
 });
 
 export const metadata: Metadata = {
   title: "Nour El Houda Bouajila | Full-Stack Engineer in Hamilton",
   description:
-    "Portfolio of Nour El Houda Bouajila — Full-Stack Engineer (React, Node.js, AWS, Docker) based in Hamilton, Ontario. 53 projects across web, WordPress, AI, cloud and DevOps.",
-  keywords: ["Full-Stack Engineer", "React", "Node.js", "AWS", "WordPress", "Hamilton", "Portfolio"],
+    "Explore 45 web, AI, cloud, analytics and WordPress projects by Nour El Houda Bouajila, a full-stack engineer based in Hamilton, Ontario.",
   authors: [{ name: "Nour El Houda Bouajila" }],
   openGraph: {
-    title: "Nour El Houda Bouajila | Full-Stack Engineer",
-    description: "53 projects across web, WordPress, AI, cloud and DevOps.",
+    title: "Nour El Houda Bouajila | Full-Stack Engineer in Hamilton",
+    description:
+      "Explore 45 web, AI, cloud, analytics and WordPress projects by Nour El Houda Bouajila, a full-stack engineer based in Hamilton, Ontario.",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nour El Houda Bouajila | Full-Stack Engineer in Hamilton",
+    description:
+      "Explore 45 web, AI, cloud, analytics and WordPress projects by Nour El Houda Bouajila, a full-stack engineer based in Hamilton, Ontario.",
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${display.variable} ${body.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-        <div className="ambient" aria-hidden="true" />
-        <div
-          className="ambient-blob"
-          aria-hidden="true"
-          style={{ width: 480, height: 480, left: "-8%", top: "6%", background: "#7137ff" }}
-        />
-        <div
-          className="ambient-blob"
-          aria-hidden="true"
-          style={{ width: 560, height: 560, right: "-10%", top: "32%", background: "#ff5bd7", animationDelay: "-8s" }}
-        />
-        <div
-          className="ambient-blob"
-          aria-hidden="true"
-          style={{ width: 420, height: 420, left: "32%", bottom: "-12%", background: "#41e8ef", animationDelay: "-14s" }}
-        />
-        <CursorHalo />
-        <RevealInit />
-        <Navbar />
-        <div style={{ flex: 1 }}>{children}</div>
-        <Footer />
-      </body>
+    <html lang="en" className={`${manrope.variable} ${bricolage.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
