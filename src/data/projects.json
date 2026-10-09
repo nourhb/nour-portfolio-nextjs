@@ -1150,5 +1150,143 @@
     "date": "2026-09-30",
     "featured": 0,
     "l": ""
+  },
+  {
+    "n": "Fixora — Home Services WordPress Theme",
+    "c": "web",
+    "t": "WordPress",
+    "l": "Bold multipage theme for plumbers, HVAC & electricians",
+    "d": "Fixora is a bold multipage WordPress block theme (Full Site Editing) built for home-service businesses — plumbers, HVAC technicians and electricians. 11 templates, 13 patterns, emergency call CTA, quote request forms, service area coverage, technician team profiles, and before/after project galleries. Designed to turn visitors into booked jobs.",
+    "u": "https://github.com/nourhb/fixora-home-services-theme",
+    "tone": "#ea580c",
+    "id": "p46",
+    "date": "2026-10-09",
+    "featured": true,
+    "imgs": [
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-4.png"
+    ],
+    "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-4.png",
+    "s": [
+      "WordPress",
+      "Full Site Editing",
+      "theme.json",
+      "PHP",
+      "Block Patterns"
+    ]
+  },
+  {
+    "n": "Lexoria — Law Firm WordPress Theme",
+    "c": "web",
+    "t": "WordPress",
+    "l": "Elegant multipage theme for law firms & attorneys",
+    "d": "Lexoria is an elegant multipage WordPress block theme (Full Site Editing) for law firms and attorneys. 11 templates, 12 patterns, practice-area showcases, attorney profiles, case results, testimonial sliders, and confidential consultation booking forms. Deep navy and gold design that communicates trust and authority.",
+    "u": "https://github.com/nourhb/lexoria-law-firm-theme",
+    "tone": "#1e3a5f",
+    "id": "p47",
+    "date": "2026-10-09",
+    "featured": true,
+    "imgs": [
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-6.png"
+    ],
+    "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-6.png",
+    "s": [
+      "WordPress",
+      "Full Site Editing",
+      "theme.json",
+      "PHP",
+      "Block Patterns"
+    ]
+  },
+  {
+    "n": "Dentavia — Dental Clinic WordPress Theme",
+    "c": "web",
+    "t": "WordPress",
+    "l": "Fresh multipage theme for dental clinics",
+    "d": "Dentavia is a fresh, calming multipage WordPress block theme (Full Site Editing) for dental clinics. 11 templates, 12 patterns, treatment showcases, dentist profiles, smile gallery, appointment booking, insurance info, and patient testimonials. Clean teal-and-white design that puts anxious patients at ease.",
+    "u": "https://github.com/nourhb/dentavia-dental-theme",
+    "tone": "#0d9488",
+    "id": "p48",
+    "date": "2026-10-09",
+    "featured": true,
+    "imgs": [
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-10.png"
+    ],
+    "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-10.png",
+    "s": [
+      "WordPress",
+      "Full Site Editing",
+      "theme.json",
+      "PHP",
+      "Block Patterns"
+    ]
+  },
+  {
+    "n": "Buildora — Construction WordPress Theme",
+    "c": "web",
+    "t": "WordPress",
+    "l": "Rugged multipage theme for construction companies",
+    "d": "Buildora is a rugged multipage WordPress block theme (Full Site Editing) for construction and renovation companies. 11 templates, 12 patterns, project portfolio with filters, quote estimator, team profiles, safety certifications, equipment showcase, and client testimonials. Bold amber-and-charcoal industrial design.",
+    "u": "https://github.com/nourhb/buildora-construction-theme",
+    "tone": "#d97706",
+    "id": "p49",
+    "date": "2026-10-09",
+    "featured": true,
+    "imgs": [
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-9.png"
+    ],
+    "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-9.png",
+    "s": [
+      "WordPress",
+      "Full Site Editing",
+      "theme.json",
+      "PHP",
+      "Block Patterns"
+    ]
+  },
+  {
+    "n": "Veteria — Veterinary Clinic WordPress Theme",
+    "c": "web",
+    "t": "WordPress",
+    "l": "Warm multipage theme for veterinary clinics",
+    "d": "Veteria is a warm, caring multipage WordPress block theme (Full Site Editing) for veterinary clinics. 11 templates, 12 patterns, service showcases, vet team profiles, pet gallery, appointment booking, emergency care info, and happy-client stories. Soft, friendly design that pet owners trust.",
+    "u": "https://github.com/nourhb/veteria-vet-theme",
+    "tone": "#65a30d",
+    "id": "p50",
+    "date": "2026-10-09",
+    "featured": true,
+    "imgs": [
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-11.png"
+    ],
+    "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-11.png",
+    "s": [
+      "WordPress",
+      "Full Site Editing",
+      "theme.json",
+      "PHP",
+      "Block Patterns"
+    ]
+  },
+  {
+    "n": "Hotelia — Hotel WordPress Theme",
+    "c": "web",
+    "t": "WordPress",
+    "l": "Luxurious multipage theme for hotels & resorts",
+    "d": "Hotelia is a luxurious multipage WordPress block theme (Full Site Editing) for hotels and resorts. 11 templates, 12 patterns, room showcases with booking CTAs, amenities grid, photo galleries, guest reviews, location guides, and special-offers sections. Sophisticated design that sells the stay before arrival.",
+    "u": "https://github.com/nourhb/hotelia-hotel-theme",
+    "tone": "#7c3aed",
+    "id": "p51",
+    "date": "2026-10-09",
+    "featured": true,
+    "imgs": [
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-12.png"
+    ],
+    "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-12.png",
+    "s": [
+      "WordPress",
+      "Full Site Editing",
+      "theme.json",
+      "PHP",
+      "Block Patterns"
+    ]
   }
 ]
