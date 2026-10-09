@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { isAdminAuthed } from '@/lib/admin-auth';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const OWNER = 'nourhb';
@@ -35,6 +36,11 @@ async function getProjectsJson() {
 
 export async function POST(request: NextRequest) {
   try {
+    // Admin auth (defense in depth — src/proxy.ts also gates this route)
+    if (!(await isAdminAuthed(request))) {
+      return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 });
+    }
+
     if (!GITHUB_TOKEN) {
       return NextResponse.json({ success: false, error: 'GITHUB_TOKEN not configured' }, { status: 500 });
     }
