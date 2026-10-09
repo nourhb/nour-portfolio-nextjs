@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { absoluteUrl, findProject, person, projectSummary, projects } from "@/lib/site";
+import { ProjectGallery } from "../ProjectGallery";
 import "../work.css";
 
 type Context = { params: Promise<{ id: string }> };
@@ -67,7 +68,8 @@ async function ProjectContent({ params }: Context) {
 
   const previous = projects[(index - 1 + projects.length) % projects.length];
   const next = projects[(index + 1) % projects.length];
-  const gallery = project.imgs.filter((src) => src !== project.cover);
+  const images = project.imgs.slice();
+  if (project.cover && !images.includes(project.cover)) images.unshift(project.cover);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
@@ -100,11 +102,7 @@ async function ProjectContent({ params }: Context) {
           <div><b>Focus</b>{project.t}</div>
           <div><b>Place in archive</b>{String(index + 1).padStart(2, "0")} of {projects.length}</div>
         </div>
-        {project.cover ? (
-          <figure className="work-cover">
-            <img src={project.cover} alt={`${project.n} cover`} />
-          </figure>
-        ) : null}
+        <ProjectGallery title={project.n} images={images} />
         <p className="work-copy">{project.d}</p>
         <div className="archive-tags">
           {project.s.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
@@ -115,16 +113,6 @@ async function ProjectContent({ params }: Context) {
           ) : null}
           <a className="button ghost" href="/#/projects">Back to archive</a>
         </div>
-        {gallery.length ? (
-          <section>
-            <h2 className="subhead">Gallery</h2>
-            <div className="work-gallery">
-              {gallery.map((src, imageIndex) => (
-                <img key={src} src={src} alt={`${project.n} interface, view ${imageIndex + 2}`} />
-              ))}
-            </div>
-          </section>
-        ) : null}
         <nav className="work-neighbors" aria-label="More projects">
           <a href={`/work/${previous.id}`}>← {previous.n}</a>
           <a href={`/work/${next.id}`}>{next.n} →</a>
