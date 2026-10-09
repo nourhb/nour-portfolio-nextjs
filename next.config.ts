@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   experimental: {
     proxyClientMaxBodySize: "20mb",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "nour-el-houda-bouajila.rf.gd",
+        pathname: "/wp-content/uploads/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
