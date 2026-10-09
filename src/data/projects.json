@@ -407,7 +407,7 @@
       "/assets/projects/p02-45.webp"
     ],
     "cover": "/assets/projects/p02-featured.webp",
-    "d": "Cultural Enigma is a game that encourages Tunisian teenagers to visit historic cultural monuments in Tunis.",
+    "d": "The original WordPress export contains this project’s complete interface gallery, but no usable plain-text description.",
     "s": [
       "Web"
     ],
@@ -416,7 +416,7 @@
     "id": "p13",
     "date": "2024-09-08",
     "featured": 0,
-    "l": "A cultural discovery game set in Tunis"
+    "l": ""
   },
   {
     "n": "Digital Training",
@@ -515,7 +515,7 @@
       "/assets/projects/p06-08.webp"
     ],
     "cover": "/assets/projects/p06-featured.webp",
-    "d": "A travel agency website presenting destinations, promotions, and the path from browsing a trip to booking it.",
+    "d": "The original WordPress export contains this project’s complete interface gallery, but no usable plain-text description.",
     "s": [
       "Web"
     ],
@@ -524,7 +524,7 @@
     "id": "p17",
     "date": "2024-09-08",
     "featured": 0,
-    "l": "A travel agency site for trips and bookings"
+    "l": ""
   },
   {
     "n": "Marble website",
@@ -539,7 +539,7 @@
       "/assets/projects/p07-06.webp"
     ],
     "cover": "/assets/projects/p07-featured.webp",
-    "d": "Chaieb Marble website presenting the company products, services, and location.",
+    "d": "The original WordPress export contains this project’s complete interface gallery, but no usable plain-text description.",
     "s": [
       "Web"
     ],
@@ -548,7 +548,7 @@
     "id": "p18",
     "date": "2024-09-08",
     "featured": 0,
-    "l": "A company site for Chaieb Marble"
+    "l": ""
   },
   {
     "n": "Bio Products Marketplace",
@@ -566,7 +566,7 @@
       "/assets/projects/p08-09.webp"
     ],
     "cover": "/assets/projects/p08-featured.webp",
-    "d": "UI and UX design for a bio products marketplace, covering discovery, catalog, and storefront screens.",
+    "d": "The original WordPress export contains this project’s complete interface gallery, but no usable plain-text description.",
     "s": [
       "E-Commerce"
     ],
@@ -575,7 +575,7 @@
     "id": "p19",
     "date": "2024-09-08",
     "featured": 14,
-    "l": "Marketplace interface design for bio products"
+    "l": ""
   },
   {
     "n": "STTC Website",
@@ -590,7 +590,7 @@
       "/assets/projects/p09-06.webp"
     ],
     "cover": "/assets/projects/p09-featured.webp",
-    "d": "STTC website presenting the company products, services, and location.",
+    "d": "The original WordPress export contains this project’s complete interface gallery, but no usable plain-text description.",
     "s": [
       "Web"
     ],
@@ -599,7 +599,7 @@
     "id": "p20",
     "date": "2024-09-08",
     "featured": 0,
-    "l": "A company site for STTC"
+    "l": ""
   },
   {
     "n": "Find Worker – job search website",
@@ -613,7 +613,7 @@
       "/assets/projects/p10-05.webp"
     ],
     "cover": "/assets/projects/p10-featured.webp",
-    "d": "Find Worker is a job search platform connecting job seekers with employers, with job posts, career blogs, and industry news.",
+    "d": "The original WordPress export contains this project’s complete interface gallery, but no usable plain-text description.",
     "s": [
       "Web"
     ],
@@ -622,7 +622,7 @@
     "id": "p21",
     "date": "2024-09-08",
     "featured": 0,
-    "l": "A job search platform for seekers and employers"
+    "l": ""
   },
   {
     "n": "SEO Rapport",
@@ -1163,7 +1163,17 @@
     "date": "2026-10-09",
     "featured": true,
     "imgs": [
-      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-4.png"
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-4.png",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/bathroom-sink-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/electrician-panel-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/electrician-work-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/happy-homeowner-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/hero-plumber-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/house-exterior-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/hvac-maintenance-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/hvac-repair-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/hvac-unit-scaled.jpg",
+      "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/tools-wrench.jpg"
     ],
     "cover": "https://nour-el-houda-bouajila.rf.gd/wp-content/uploads/2026/10/screenshot-4.png",
     "s": [
@@ -1288,91 +1298,5 @@
       "PHP",
       "Block Patterns"
     ]
-  },
-  {
-    "n": "XLBio Bio Products Marketplace",
-    "c": "e-commerce",
-    "t": "E-Commerce",
-    "l": "An organic products marketplace for XL Bio",
-    "d": "XLBio is a full-featured organic products marketplace connecting health-conscious consumers with trusted bio producers. It offers product discovery, secure checkout, and inventory management for a store built to scale.",
-    "u": "",
-    "tone": "#22c55e",
-    "id": "p52",
-    "date": "2024-09-04",
-    "featured": 0,
-    "imgs": [
-      "/assets/projects/imported/xlbio.jpeg"
-    ],
-    "cover": "/assets/projects/imported/xlbio.jpeg",
-    "s": [
-      "WordPress",
-      "WooCommerce",
-      "PHP",
-      "JavaScript",
-      "Figma"
-    ]
-  },
-  {
-    "n": "SEO Performance Measurement Tool",
-    "c": "marketing",
-    "t": "Marketing",
-    "l": "Search performance tracking across channels",
-    "imgs": [
-      "/assets/projects/imported/seo-tool.png"
-    ],
-    "cover": "/assets/projects/imported/seo-tool.png",
-    "d": "A dedicated SEO analytics tool that measures and tracks search performance across digital channels. From keyword rankings to traffic trends, it delivers insights that help businesses grow organic visibility.",
-    "s": [
-      "SEO",
-      "Analytics",
-      "Reporting"
-    ],
-    "u": "",
-    "tone": "#22d3ee",
-    "id": "p53",
-    "date": "2024-10-01",
-    "featured": 0
-  },
-  {
-    "n": "Customized Websites and Designs",
-    "c": "web",
-    "t": "Web",
-    "l": "Bespoke sites shaped around each brand",
-    "imgs": [
-      "/assets/projects/imported/custom-sites.png"
-    ],
-    "cover": "/assets/projects/imported/custom-sites.png",
-    "d": "Bespoke website design and development tailored to each client brand. React and WordPress builds that stay responsive and conversion-focused on every screen.",
-    "s": [
-      "React",
-      "WordPress",
-      "Figma"
-    ],
-    "u": "",
-    "tone": "#7c3aed",
-    "id": "p54",
-    "date": "2024-10-01",
-    "featured": 0
-  },
-  {
-    "n": "Looker Studio Personalized Reports",
-    "c": "marketing",
-    "t": "Marketing",
-    "l": "Custom dashboards from live business data",
-    "imgs": [
-      "/assets/projects/imported/looker.png"
-    ],
-    "cover": "/assets/projects/imported/looker.png",
-    "d": "Custom Looker Studio reports that turn raw business data into readable dashboards. Multiple data sources come together so clients can spot trends and decide faster.",
-    "s": [
-      "Looker Studio",
-      "Data",
-      "Reporting"
-    ],
-    "u": "",
-    "tone": "#6366f1",
-    "id": "p55",
-    "date": "2024-10-01",
-    "featured": 0
   }
 ]
