@@ -272,6 +272,121 @@
     ]
   },
   {
+    "n": "EKS GitOps Blueprint",
+    "c": "cloud",
+    "t": "Cloud",
+    "l": "Production-ready EKS platform with GitOps delivery",
+    "imgs": [
+      "/assets/projects/eks-architecture.png"
+    ],
+    "cover": "/assets/projects/eks-architecture.png",
+    "d": "Advanced EKS GitOps blueprint with 42 files. Production-ready Terraform infrastructure, Argo CD continuous delivery, EKS 1.29 cluster with autoscaling, monitoring stack, and security best practices — a complete Kubernetes platform foundation.",
+    "s": [
+      "AWS",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "CI/CD"
+    ],
+    "u": "https://github.com/nourhb/eks-gitops-blueprint",
+    "tone": "#22d3ee",
+    "id": "p63",
+    "date": "2026-10-13",
+    "featured": 0
+  },
+  {
+    "n": "Zero-Trust Supply Chain",
+    "c": "cloud",
+    "t": "Cloud",
+    "l": "Signed, attested, verifiable software supply chain",
+    "imgs": [
+      "/assets/projects/zero-trust-flow.png"
+    ],
+    "cover": "/assets/projects/zero-trust-flow.png",
+    "d": "Zero-trust software supply chain security framework. Cosign image signing, SLSA provenance attestation, SBOM generation, Kyverno admission policies — end-to-end verifiable builds from source to deployment.",
+    "s": [
+      "AWS",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "CI/CD"
+    ],
+    "u": "https://github.com/nourhb/zero-trust-supply-chain",
+    "tone": "#34d399",
+    "id": "p64",
+    "date": "2026-10-13",
+    "featured": 0
+  },
+  {
+    "n": "DevSecOps PaaS",
+    "c": "cloud",
+    "t": "Cloud",
+    "l": "Microservices PaaS with DevSecOps pipeline",
+    "imgs": [
+      "/assets/projects/devsecops-cover.png"
+    ],
+    "cover": "/assets/projects/devsecops-cover.png",
+    "d": "Microservices PaaS platform with DevSecOps pipeline. Next.js control-plane UI for sign-in, project management, builds, security scans, GitOps, and cluster deployment.",
+    "s": [
+      "AWS",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "CI/CD"
+    ],
+    "u": "https://github.com/nourhb/devsecops_paas_miscroservices",
+    "tone": "#38bdf8",
+    "id": "p65",
+    "date": "2026-10-13",
+    "featured": 0
+  },
+  {
+    "n": "AWS Next Express",
+    "c": "cloud",
+    "t": "Cloud",
+    "l": "Full-stack app on AWS with end-to-end deployment",
+    "imgs": [
+      "/assets/projects/aws-next-express-cover.png"
+    ],
+    "cover": "/assets/projects/aws-next-express-cover.png",
+    "d": "Full-stack Next.js + Express app deployed on AWS with DynamoDB, S3, Docker, and Kubernetes. Modern cloud-native architecture showcasing end-to-end deployment.",
+    "s": [
+      "AWS",
+      "Terraform",
+      "Kubernetes",
+      "Docker",
+      "CI/CD"
+    ],
+    "u": "https://github.com/nourhb/aws-next-express",
+    "tone": "#ff9900",
+    "id": "p66",
+    "date": "2026-10-13",
+    "featured": 0
+  },
+  {
+    "n": "CloudLinkedIn Agent",
+    "c": "ai",
+    "t": "AI",
+    "l": "Autonomous AI agent publishing daily Cloud/DevOps posts",
+    "imgs": [
+      "/assets/projects/cloudlinkedin-console.png",
+      "/assets/projects/cloudlinkedin-console-2.png"
+    ],
+    "cover": "/assets/projects/cloudlinkedin-console.png",
+    "d": "An autonomous AI agent that plans, writes, validates, and publishes one Cloud/DevOps LinkedIn post per day — fully on free-tier infrastructure. Avoids repetition, keeps full history, posts daily without further input.",
+    "s": [
+      "Python",
+      "TypeScript",
+      "LLMs",
+      "n8n"
+    ],
+    "u": "https://github.com/nourhb/cloud-linkedin-agent",
+    "tone": "#0ea5e9",
+    "id": "p67",
+    "date": "2026-10-13",
+    "featured": 0
+  },
+  {
     "n": "Maqss — Barbershop WordPress Theme",
     "c": "wp",
     "t": "WordPress",
