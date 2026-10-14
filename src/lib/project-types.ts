@@ -17,6 +17,7 @@ export type PortfolioProject = {
 export const CATEGORIES = [
   { id: "web", label: "Web" },
   { id: "wp", label: "WordPress" },
+  { id: "cloud", label: "Cloud" },
   { id: "ai", label: "AI" },
   { id: "marketing", label: "Marketing" },
   { id: "e-learning", label: "E-Learning" },
