@@ -1,5 +1,32 @@
 [
  {
+  "n": "Cloud Cost Optimizer",
+  "c": "cloud",
+  "t": "Cloud",
+  "l": "FinOps dashboard: turn cloud bills into clear savings",
+  "imgs": [
+   "/assets/projects/cloud-cost-optimizer.png",
+   "/assets/projects/cloud-cost-optimizer-analysis.png",
+   "/assets/projects/cloud-cost-optimizer-budgets.png",
+   "/assets/projects/cloud-cost-optimizer-recommendations.png",
+   "/assets/projects/cloud-cost-optimizer-imports.png"
+  ],
+  "cover": "/assets/projects/cloud-cost-optimizer.png",
+  "d": "FinOps web app that turns opaque cloud invoices into clear visibility, early warnings, and actionable savings. Upload a normalized CSV of charges — the app validates every row with a keep/reject preview, then loads accepted lines into a private workspace: live dashboard with spend trends, top services and regions, monthly budgets with warning/critical thresholds, spike alerts, an honest end-of-month forecast with confidence labels, and rule-based recommendations that stay advisory-only (never touches your cloud accounts). Export the analysis as CSV or PDF for stakeholders. Runs in demo mode with synthetic data — no cloud credentials, no destructive operations.",
+  "s": [
+   "Next.js",
+   "TypeScript",
+   "Supabase",
+   "Recharts",
+   "Tailwind CSS"
+  ],
+  "u": "https://github.com/nourhb/cloud-cost-optimizer",
+  "tone": "#22d3ee",
+  "id": "p68",
+  "date": "2026-10-14",
+  "featured": 1
+ },
+ {
   "n": "Photovia — Photography WordPress Theme",
   "c": "wp",
   "t": "WordPress",
